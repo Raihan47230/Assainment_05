@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Assainment_5</title>
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body >
+
+   
+
+    <div class="  w-full backdrop-blur-3xl sticky top-0 ">
+     <!-- nav Section -->
+ <section class="  mb-5 py-7  bg-gray-100">
+          <nav id="navMain" class="flex justify-between container mx-auto">
+               <span>
+                    <button id="blogBtn0" class="hidden font-bold lg:text-3xl bg-gradient-to-r from-amber-200 to-lime-300 py-2 px-4 rounded-md cursor-pointer ">
+                     Home
+                        </button>
+                    <button id="blogBtn" class="font-bold lg:text-3xl bg-gradient-to-r from-amber-200 to-lime-300 py-2 px-4 rounded-md cursor-pointer ">
+                    Bloge
+                    </button>                 
+               </span>
+                    <span class="flex gap-3 items-center">
+                         <img class="h-9 w-9" src="images/logo.png" alt="">
+                         <p class="font-bold  lg:text-3xl">Donate Bangladesh</p>
+                    </span>
+               <span class="flex gap-3 items-center">
+                    <img class="h-9 w-9" src="images/coin.png" alt="">
+                    <div class="flex gap-1 items-center">
+                         <p id="totalAmount" class="font-bold text-xl lg:text-3xl ">100000 </p>
+                         <span class="font-bold lg:text-3xl">BDT</span>
+                    </div>
+               </span>
+          </nav>
+</section>
+<!-- nav Section -->
+ 
+ <!-- 2 btn Section -->
+ <section class=" py-5  ">
+     <div class="flex justify-center gap-5">
+          <button id="donate" class="bg-gradient-to-r from-yellow-200 to-rose-600 py-2 px-10 rounded-xl text-3xl font-bold text-slate-600">Donation</button>
+           <button id="history" class="py-2 px-10 rounded-xl text-3xl font-bold text-slate-600">History</button>
+     </div>
+ </section>
+<!-- 2 btn Section -->
+    </div>
+  <!--mx section-->
+  <section class="container mx-auto px-10 mt-20">
+         <div id="defoultSee" class="">
+             <!-- noahkhali flood-->
+             <section class="mb-4 bg-gray-50 rounded-2xl">
+               <div class="lg:flex justify-around gap-12 py-10 px-10 border border-gray-300 rounded-2xl">
+                    <div class="mb-2">
+                         <img src="images/noakhali.png" alt="">
+                    </div>
+                    <div class="">
+                         <div class=" flex gap-1 bg-slate-400 mb-5 w-40 py-3 px-2 rounded-xl">
+                              <img src="images/coin.png" alt="">
+                              <span class="flex gap-1 items-center">
+                                   <h2 id="addMomey1" class="font-bold "> 100 </h2>
+                                   <p>BDT</p>
+                              </span>
+                         </div>
+                         <div>
+                              <h2 id="noahkhali" class="text-xl font-bold mb-4">Donate for Flood at Noakhali, Bangladesh</h2>
+                              <h3 class="text-lg font-semibold mb-6"> The recent floods in Noakhali have caused significant damage to <br>  homes  infrastructure. Your donation will help provide essential <br>  supplies and  to those affected by this disaster. Every contribution, <br>  big or small, makes  difference. Please join us in supporting the relief <br>  efforts and making a positive impact on the lives of those in need.</h3>
+                             
+                              <input  id="inputFild1"  class="border border-slate-500 w-full py-3 px-6 rounded-xl border border-gray-700 mb-5 font-bold required:" placeholder="Write Donation Amount" type="number "  ><br>
+                              <button  id="donateBtn"  class=" bg-gradient-to-r from-yellow-200 to-rose-600 py-3 px-10 rounded-xl text-3xl font-bold text-white w-full">Donate Now</button>
+
+                              <dialog id="my_modal_1" class="modal">
+                                   <div class="modal-box">
+                                        <h2 class=" flex justify-center text-4xl font-bold mb-5">Congrates!</h2>
+                                        <img class="h-8 w-8 mx-auto mb-6" src="images/coin.png" alt="">
+                                        <p class="flex justify-center text-xl mb-5">You have donate for Humankind</p>
+                                        <p class="text-xl font-bold flex justify-center">Successfully</p>
+                                     <div class="modal-action">
+                                       <form method="dialog">
+                                         <!-- if there is a button in form, it will close the modal -->
+                                         <button class="btn">Close</button>
+                                       </form>
+                                     </div>
+                                   </div>
+                                 </dialog>
+                         </div>    
+                    </div>
+               </div>
+           </section>
+          <!-- noahkhali flood-->
+    
+          <!--fani flood-->
+          <section class="mb-4 bg-gray-50 rounded-2xl">
+               <div class="lg:flex justify-around gap-12 py-10 px-10 border border-gray-300 rounded-2xl">
+                    <div class="mb-2">
+                         <img src="images/feni.png" alt="">
+                    </div>
+                    <div class="">
+     
+                         <div class=" flex gap-1 bg-slate-400 mb-5 w-40 py-3 px-2 rounded-xl">
+                              <img src="images/coin.png" alt="">
+                              <span class="flex gap-1 items-center">
+                                   <h2 id="addMomey2" class="font-bold"> 100 </h2>
+                                   <p>BDT</p>
+                              </span>
+                         </div>
+                         <div>
+                              <h2 id="fani" class="text-xl font-bold mb-4">Donate for Flood Relief in Feni,Bangladesh</h2>
+                              <h3 class="text-lg font-semibold mb-6"> The recent floods in Feni have devastated local communities, leading <br> to severe disruption and loss. Your generous donation will help <br> provide immediate aid, including food, clean water, and medical <br> supplies, to those affected by this calamity. Together, we can offer <br> crucial support and help rebuild lives in the aftermath of this disaster. <br> Every contribution counts towards making a real difference. Please <br> consider donating today to assist those in urgent need.</h3>
+                              <input id="inputFild2"  class="border border-slate-500 w-full py-3 px-6 rounded-xl border border-gray-700 mb-5 font-bold" placeholder="Write Donation Amount" type="text "><br>
+                              <button onclick="my_modal_2.showModal()" id="donateBtn2" class="bg-gradient-to-r from-yellow-200 to-rose-600 py-3 px-10 rounded-xl text-3xl font-bold text-white w-full">Donate Now</button>
+                              <dialog id="my_modal_20" class="modal">
+                                   <div class="modal-box">
+                                        <h2 class=" flex justify-center text-4xl font-bold mb-5">Congrates!</h2>
+                                        <img class="h-8 w-8 mx-auto mb-6" src="images/coin.png" alt="">
+                                        <p class="flex justify-center text-xl mb-5">You have donate for Humankind</p>
+                                        <p class="text-xl font-bold flex justify-center">Successfully</p>
+                                     <div class="modal-action">
+                                       <form method="dialog">
+                                         <!-- if there is a button in form, it will close the modal -->
+                                         <button class="btn">Close</button>
+                                       </form>
+                                     </div>
+                                   </div>
+                                 </dialog>
+                         </div>     
+                    </div>
+               </div>
+          </section>
+            <!--fani flood-->
+     
+            <!--quota-->
+            <section class="mb-4 bg-gray-50 rounded-2xl">
+               <div class="lg:flex justify-around gap-12 py-10 px-10 border border-gray-300 rounded-2xl">
+                    <div class="mb-2">
+                         <img src="images/quota-protest.png" alt="">
+                    </div>
+                    <div class="">
+        
+                         <div class=" flex gap-1 bg-slate-400 mb-5 w-40 py-3 px-2 rounded-xl">
+                              <img src="images/coin.png" alt="">
+                              <span class="flex gap-1 items-center">
+                                   <h2 id="addMomey3" class="font-bold"> 100 </h2>
+                                   <p>BDT</p>
+                              </span>
+                         </div>
+                         <div>
+                              <h2 id="quota" class="text-xl font-bold mb-4">Aid for Injured in the Quota Movement</h2>
+                              <h3 class="text-lg font-semibold mb-6"> The recent Quota movement has resulted in numerous injuries and <br> significant hardship for many individuals. Your support is crucial in <br> providing medical assistance, rehabilitation, and necessary supplies <br> to those affected. By contributing, you help ensure that injured <br> individuals receive the care and support they need during this <br> challenging time. Every donation plays a vital role in  alleviating their <br> suffering and aiding in their recovery. Please consider making a <br>donation to support these brave individuals in their time of need.</h3>
+                              <input id="inputFild3"  class="border border-slate-500 w-full py-3 px-6 rounded-xl border border-gray-700 mb-5 font-bold" placeholder="Write Donation Amount" type="text "><br>
+                              <button  id="donateBtn3" class="bg-gradient-to-r from-yellow-200 to-rose-600 py-3 px-10 rounded-xl text-3xl font-bold text-white w-full">Donate Now</button>
+
+                              <dialog id="my_modal_3" class="modal">
+                                   <div class="modal-box">
+                                        <h2 class=" flex justify-center text-4xl font-bold mb-5">Congrates!</h2>
+                                        <img class="h-8 w-8 mx-auto mb-6" src="images/coin.png" alt="">
+                                        <p class="flex justify-center text-xl mb-5">You have donate for Humankind</p>
+                                        <p class="text-xl font-bold flex justify-center">Successfully</p>
+                                     <div class="modal-action">
+                                       <form method="dialog">
+                                         <!-- if there is a button in form, it will close the modal -->
+                                         <button class="btn">Close</button>
+                                       </form>
+                                     </div>
+                                   </div>
+                                 </dialog>
+                         </div>
+                    </div>
+               </div>
+            </section>
+           <!--quota-->
+         </div>
+           <!--hidden faq-->
+          <section id="faq" class="hidden">
+               <div class="  collapse collapse-arrow bg-base-200 mb-5">
+                    <input type="radio" name="my-accordion-2" checked="checked" />
+                    <div class="collapse-title text-xl font-medium">
+                         What is the Document Object Model (DOM)?
+                         </div>
+                    <div class="collapse-content">
+                      <p>The Document Object Model (DOM) is a programming interface for the web documents.In an HTML document,DOM allows JavaScript to access and modify the contents of the page.This is how interactive features on websites are implemented.</p>
+                    </div>
+                  </div>
+     
+                  <div class="collapse collapse-arrow bg-base-200 mb-5">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-xl font-medium">
+                         How do you select an element from the DOM?
+                         There are many ways to select an element:
+                         
+                        </div>
+                    <div class="collapse-content">
+                      <p> 1.getElementById() <br>
+                         2.getElementsByClassName()<br>
+                         3.getElementsByTagName()<br>
+                         4.querySelector()<br>
+                         5.querySelectorAll()</p>
+                    </div>
+                  </div>
+     
+                  <div class="collapse collapse-arrow bg-base-200 mb-5">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-xl font-medium">
+                         What is event delegation in the context of the DOM, and why is it useful?
+                         </div>
+                    <div class="collapse-content">
+                      <p>Event delegation is a technique in JS that set event propagation (bubbling) to handle events at a higher level in the DOM than the element on which the event originated.Instead of adding individual event listeners to multiple child elements,one can add a single event listener to a parent element.This parent element can then manage all events that bubble up from its child elements.</p>
+                    </div>
+                  </div>
+     
+                  <div class="collapse collapse-arrow bg-base-200 mb-5">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-xl font-medium">
+                         How do you manipulate an element's attribute and styles using the DOM?
+                        </div>
+                    <div class="collapse-content">
+                      <p> There are many ways to manipulate an element's attributes and styles using the DOM:<br>
+                         
+                         1.setAttribute()<br>
+                         2.getAttribute()<br>
+                         3.removeAttribute()<br>
+                         For styling:<br>
+                         
+                         One can directly set the 'style' property of an element<br>
+                         
+                         One can use the 'classList' property to add, remove, or toggle classes</p>
+                    </div>
+                  </div>
+          </section>
+
+          <!-- history section -->
+         <section  id="hiddenFile" class="mt-10 w-4/5 mx-auto  hidden">
+          <div id="history_containt" class="flex flex-col gap-4">
+              
+          </div>
+       </section>
+        <!-- history section -->
+  </section>
+  <script src="index.js"></script>
+  <script src="utility.js"></script>
+</body>
+</html>
